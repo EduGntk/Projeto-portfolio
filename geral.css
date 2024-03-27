@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    background-color: white;
+    height: 5vw;
+    color: white;
+    padding: 10px;
+}
+
+main{
+    background-color: beige;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    background-color: blueviolet;
+    border: 2px solid rgb(121, 33, 203);
+    border-radius: 5px;
+    padding: 4px;
+}
+
+/*INTRODUÇÃO*/
+
+#fundo{
+    background-image: url(imagens/fundoroxo1.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.apresenta{
+    font-family: 'Rubik Mono One', monospace;
+    width: 50vw;
+    padding: 0.5vw;
+    border-radius: 5px;
+    margin: 0;
+    margin-left: 4vw;
+    color: white;
+    font-size: 1.5vw;
+}
+
+#fundo > #apresentation > h1{
+    font-size: 2.5vw;
+}
+#fundo > #apresentation > h2{
+    font-size: 2.5vw;
+}
+
+
+
+/*INTRODUÇÃO*/
