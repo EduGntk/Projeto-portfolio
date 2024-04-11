@@ -40,12 +40,28 @@ a{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    box-shadow: 0px 0px 20px 3px rgba(104,25,178,255);
+    justify-content: center;
+    box-shadow: 0px 20px 30px 10px rgba(104,25,178,0.551);
+    margin-bottom: 15vh;
 }
 
 #imgpro{
     width: 70%;
     background-attachment: fixed;
+}
+
+#links{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 8vw;
+}
+
+#links > a{
+    padding: 15px;
 }
 
 #testeimg{
@@ -60,15 +76,22 @@ a{
     padding: 0.5vw;
     border-radius: 5px;
     margin: 0;
-    margin-left: 4vw;
+    margin-left: 5vw;
     color: white;
     font-size: 1.5vw;
 }
 
-#fundo > #apresentation > h1{
+#apresentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#entrada > h1{
     font-size: 2.5vw;
 }
-#fundo > #apresentation > h2{
+#entrada > h2{
     font-size: 2.5vw;
 }
 
@@ -83,6 +106,7 @@ a{
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-items: center;
+    margin-bottom: 15vh;
 }
 
 /* fazer efeito 3d */
@@ -90,7 +114,6 @@ a{
     background-color: white;
     width: 30vw;
     height: 40vh;
-    margin-bottom: 100px;
     box-shadow: 2px 3px 10px 2px rgba(0, 0, 0, 0.542);
 }
 
@@ -107,20 +130,39 @@ a{
 #descri{
     background-color: dodgerblue;
     color: white;
-    width: 50vw;
-    height: 25vh;
+    width: 100%;
+    height: 100%;
     margin: auto;
-    padding: 15px;
+}
+
+#sobremim{
+    margin: auto;
+    margin-bottom: 15vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: whitesmoke;
+    align-content: center;
+    justify-content: center;
+    width: 80vw;
+}
+#conteudo{
+    padding: 20px;
+}
+
+#imagemsobre{
+    width: 100%;
 }
 
 /* descrição ao passar mouse */
 #projetos{
     display: grid;
     grid-template-columns:repeat(3, 1fr);
+    background-color: transparent;
     margin: auto;
     gap: 10px;
     width: 80vw;
     height: 80vh;
+    perspective: 1500px;
 }
 
 .fontetxt{
@@ -129,6 +171,7 @@ a{
 
 .fontetitulo{
     font-size: 2rem;
+    text-align: center;
 }
 
 li{
@@ -137,11 +180,30 @@ li{
 }
 
 .cardprojeto{
-    background-color: dodgerblue;
+    background-color: transparent;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 600ms ease-in-out;
+    transition-delay: 0.5ms;
+}
+
+.front, .back{
+    text-align: center;
+    background-color: purple;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+.back{
+    background-color: gold;
+    transform: rotateY(180deg);
 }
 
 .cardprojeto:hover{
-    background-color: orange;
+    transform: rotateY(180deg);
 }
 
 /*INTRODUÇÃO*/
