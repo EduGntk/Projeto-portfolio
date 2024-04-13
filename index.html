@@ -6,18 +6,24 @@
     <title>Portfólio</title>
     <link rel="stylesheet" href="geral.css" media="all">
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <!--COLOCAR ICON-->
 </head>
 <body>
     <header id="intro">
-        <img id="logo" src="imagens/logo.png" alt="logo letra E">
-        <div id="botoes">
-            <a href="#sobremim">Sobre Mim</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#projetoslink">Meus Projetos</a>
-            <a href="#footer">Contato</a>
+        <div id="cabeçalho">
+            <img id="logo" src="imagens/logo.png" alt="logo letra E">
+            <span id="burguer" class="material-symbols-outlined menu" onclick="clickMenu()">
+                menu
+            </span>
         </div>
-        <nav>
+        <nav id="botoes">
+            <ul id="listabotoes">
+                <li><a href="#sobremim">Sobre Mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetoslink">Meus Projetos</a></li>
+                <li><a href="#footer">Contato</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -52,9 +58,12 @@
                 <div>
                     <img id="imagemsobre" src="imagens/programando.svg" alt="">
                 </div>
-                <div id="descri">
-                    <div id="conteudo">
+                <div id="descri"> 
+                    <div id="fundotitulo">
                         <h1 class="fontetitulo">Sobre mim</h1>
+                    </div>
+                    <div id="conteudo">
+
                         <p>Meu nome é Eduardo Gnatkowski, sou estudante de Engenharia de Software, atualmente cursando o 3º período. Comecei minha jornada na programação em fevereiro de 2023, e desde agosto do mesmo ano venho me dedicando ao desenvolvimento frontend, com o objetivo de me tornar um programador full stack no futuro. Gosto de criar sites
                         criativos e engenhosos, combinando habilidades técnicas com uma abordagem estética diferenciada.</p>
                         <h1 id="frase">Gosto de codar e dar vida à ideias.</h1>
@@ -150,23 +159,39 @@
         <h1>Contato:</h1>
         <div>
             <table>
+            
                 <tr>
-                    <th>GitHub</th>
-                    <th>Linkedin</th>
-                    <th>Email</th>
-                    <th>Celular</th>
+                    <th>GitHub:</th>
+                    <td><a class="footerbotao" href="https://github.com/EduGntk" target="_blank">Clique aqui</a></td>
                 </tr>
                 <tr>
-                    <td><a href="https://github.com/EduGntk" target="_blank">Clique aqui</a></td>
-                    <td><a href="https://www.linkedin.com/in/eduardo-gnatkowski-00654a301/" target="_blank">Clique aqui</a></td>
+                    <th>Linkedin:</th>
+                    <td><a class="footerbotao" href="https://www.linkedin.com/in/eduardo-gnatkowski-00654a301/" target="_blank">Clique aqui</a></td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
                     <td>eduardo.gnat@gmail.com</td>
+                </tr>
+                <tr>
+                    <th>Celular:</th>
                     <td>+55 (42)99809-5900</td>
                 </tr>
+                
             </table>
         </div>
         <div id="voltar">
             <a href="#intro">Voltar ao topo</a>
         </div>
     </footer>
+
+    <script>
+        function clickMenu(){
+            if(botoes.style.display=='none'){
+                botoes.style.display='block'
+            }else{
+                botoes.style.display='none'
+            }
+        }
+    </script>
 </body>
 </html>
