@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&family=Rubik+Mono+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jersey+15&display=swap');
+/*COnfigurações gerais*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 5vw;
+    color: white;
+    padding: 10px;
+}
+
+#logo{
+    width: 5.8vw;
+    justify-self: auto;
+    margin-left: 1%;
+}
+
+main{
+    grid-area: main;
+    background-color: whitesmoke;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    background: rgb(122,32,204);
+    background: linear-gradient(22deg, rgba(122,32,204,1) 12%, rgba(166,0,255,1) 100%);
+    border-radius: 3px;
+    padding: 8px;
+}
+#listabotoes > li > a{
+    padding: 8px;
+    border: none;
+}
+
+h1{
+    text-align: center;
+}
+
+#botoes{
+    display: grid;
+    grid-template-columns: repeat(4, 130px);
+    gap: 10px;
+    text-align: center;
+    margin-left: 50%;
+}
+
+/*Introdução*/
+
+#fundo{
+    background-image: url(imagens/fundoroxo1.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 40vw;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15vh;
+}
+
+#imgpro{
+    width: 75%;
+    background-attachment: fixed;
+}
+
+#links{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-right: 8vw;
+}
+
+#links > a{
+    padding: 15px;
+}
+
+#testeimg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.apresenta{
+    font-family: "Rubik Mono One", monospace;
+    font-weight: 400;
+    font-style: normal;
+    width: 50vw;
+    padding: 0.5vw;
+    border-radius: 5px;
+    margin: 0;
+    margin-left: 5vw;
+    color: white;
+    font-size: 1.5vw;
+    text-align: left;
+}
+
+#apresentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Easter Egg*/
+
+#entrada{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+#entrada > h1{
+    font-size: 2.5vw;
+}
+#entrada > h2{
+    font-size: 2.5vw;
+}
+#easterEgg__child > h2{
+    font-size: 2.5vw;
+}
+#easterEgg__child2 > h2{
+    font-size: 2.5vw;
+}
+
+#easterEgg{
+    background-color: transparent;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 600ms ease-in-out;
+    transition-delay: 0.5ms;
+    width: 50vw;
+    padding: 0.5vw;
+}
+
+#easterEgg__child, #easterEgg__child2{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 5px;
+}
+
+#easterEgg__child2{
+    transform: rotateX(180deg);
+}
+
+#easterEgg__child2 > h2{
+    color: gold;
+    animation: glow 1.5s linear infinite;
+    text-shadow: 0 0 15px;
+}
+
+@keyframes glow{
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+@keyframes anime{
+    100%{
+        background-position-x:-200% ;
+    }
+}
+
+#easterEgg:hover{
+    transform: rotateX(180deg);
+}
+
+/*Sobre mim*/
+
+#sobremim{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    background-color: white;
+    align-content: center;
+    justify-content: center;
+    width: 80vw;
+
+}
+
+#descri{
+    background: rgb(122,32,204);
+    background: linear-gradient(22deg, rgba(122,32,204,1) 20%, rgba(192,0,255,1) 100%);
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+#testeflow{
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    height: 53vh;
+    padding: 10px;
+    background: linear-gradient(90deg, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 50%, rgb(64, 84, 178) 100%);
+    animation: anime 1.5s linear infinite;
+    background-size: 200% 200%;
+    margin-bottom: 15vh;
+}
+
+#conteudo{
+    padding: 20px;
+}
+
+#conteudo > p{
+    font-size: 1.3rem;
+}
+
+#imagemsobre{
+    width: 100%;
+}
+
+/*Habilidades Cards*/
+
+#habilidades{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 15vh;
+    gap: 10px;
+    width: 80vw;
+    height: 80vh;
+}
+
+.card{
+    width: 20vw;
+    height: 70vh;
+    background: linear-gradient(90deg, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 50%, rgb(64, 84, 178) 100%);
+    animation: anime 1.5s linear infinite;
+    overflow: hidden;
+    border-radius: 15px;
+    padding: 5px;
+    background-size: 200% 200%;
+}
+
+.headerCard{
+    height: 30%;
+    color: white;
+    background: rgb(145,4,226);
+    background: linear-gradient(22deg, rgba(145,4,226,1) 20%, rgba(48,0,110,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius:0% 100% 0% 100% / 100% 0% 50% 100%;
+}
+
+.cardbody{
+    background-color: white;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.fontetxt{
+    font-size: 2rem;
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.fontetitulo{
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+/*Projetos*/
+
+#projetos{
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
+    background-color: transparent;
+    margin: auto;
+    margin-bottom: 15vh;
+    gap: 10px;
+    width: 80vw;
+    height: 80vh;
+    perspective: 1500px;
+}
+
+.cardprojeto{
+    background-color: transparent;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: 600ms ease-in-out;
+    transition-delay: 0.5ms;
+}
+
+.front, .back{
+    text-align: center;
+    background-color: #3e187a;
+    background-image: linear-gradient(316deg, #3e187a 0%, #994ecc 74%);
+     
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 3px;
+}
+
+.back{
+    background-color: gold;
+    transform: rotateY(180deg);
+}
+
+.cardprojeto:hover{
+    transform: rotateY(180deg);
+}
+
+/*Footer*/
+
+footer{
+    grid-area: footer;
+    width: 100%;
+    height: 17vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+}
+
+table{
+    width: 50vw;
+    height: 15vh;
+    text-align: center;
+}
+
+footer > h1{
+    justify-self: center;
+}
+
+#voltar{
+    justify-self: center;
+}
