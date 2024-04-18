@@ -244,6 +244,10 @@ Grandes telas: acima de 1200px.
 }
 
 @media (min-width: 1024px){
+    li > a:hover{
+        padding: 20px;
+
+    }
     @keyframes glow{
         100%{
             filter: hue-rotate(360deg);
