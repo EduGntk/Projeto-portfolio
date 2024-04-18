@@ -56,6 +56,10 @@ a{
     border-radius: 3px;
     padding: 8px;
 }
+#listabotoes > li > a{
+    padding: 8px;
+    border: none;
+}
 
 h1{
     text-align: center;
