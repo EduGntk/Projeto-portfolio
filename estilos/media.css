@@ -80,6 +80,40 @@
             background-position-x:-200% ;
         }
     }
+    #linkheader{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    #burguer{
+        display: none;
+    }
+    #cabeçalho{
+        width: 15vw;
+    }
+    #botoes{
+        align-items: center;
+        width: 100%;
+        margin-right: 3vw;
+    }
+
+    #listabotoes{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: end;
+        gap: .5vw;
+    }
+    #listabotoes > li > a{
+        background-color: white;
+        color: rgb(159, 7, 169);
+        font-size: 3vw;
+        border-top: none;
+        border: 1px solid rgb(159, 7, 169);
+        border-radius: 5px 5px;
+        padding: 5px;
+    }
     #fundosobre{
         margin: auto;
         width: 90vw;
@@ -108,11 +142,52 @@
         display: block;
         width: 40vw;
     }
+    #habilidades{
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px 0px;
+    }
+    .card{
+        width: 40vw;
+        height: 30vw;
+    }
+    .headercard{
+        width: 5vw;
+        height: 5vw;
+        top: -7px;
+        right: -7px;
+    }
     .cardtitle{
-        font-size: 4.5vw;
+        font-size: 4.3vw;
     }
     .cardtext{
-        font-size: 3.8vw;
+        font-size: 3.5vw;
+    }
+    #tituloprojetos{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: white;
+        color: rgba(167,0,255,1);
+        margin: auto;
+        width: 85vw;
+        height: 8vw;
+        border-radius: 50px 10px 0px 0px;
+    }
+    #projetos{
+        width: 85%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        gap: 10px 0px;
+        border-radius: 0px 0px 10px 10px;
+    }
+
+    .cardprojeto{
+        width: 40vw;
+        height: 30vw;
     }
     
     td, th, .front, .back{
@@ -123,8 +198,6 @@
         font-size: 2.5vw;
     }
 
-    footer{
-    }
     .fontetitulo{
         font-size: 4vw;
     }
