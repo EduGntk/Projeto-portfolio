@@ -111,7 +111,7 @@ a{
     font-size: 5vw;
 }
 
-.fontetxt, #conteudo{
+#conteudo{
     font-size: 4vw;
 }
 
@@ -128,9 +128,14 @@ a{
 
 }
 
+.front, .back{
+    color: white;
+}
+
 td, th, .front, .back{
     font-size: 3.5vw;
 }
+
 
 /*principal*/
 
@@ -354,17 +359,17 @@ main{
 
 footer{
     width: 100vw;
-    height: 50vw;
     padding: 10px;
     display: flex;
     flex-direction: column;
     align-items: left;
     justify-content: left;
+    gap: 15px;
 }
 
 footer > h1{
     align-self: center;
-    margin-bottom: 2vw;
+
 }
 
 tr{
