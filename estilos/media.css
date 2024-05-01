@@ -52,11 +52,6 @@
         font-size: 4.5vw;
     }
     
-    .cardtitle, .cardtext{
-        color: white;
-    
-    }
-    
     td, th, .front, .back{
         font-size: 3vw;
     }
@@ -103,8 +98,15 @@
         font-size: 4.5vw;
     }
     #links > a{
+        border: 2px solid white;
         width: 15vw;
         font-size: 3vw;
+        transition: .2s ease-in-out;
+    }
+    #links > a:hover{
+        color: white;
+        transform: scale(1.04);
+        background: linear-gradient(111.7deg, rgb(165, 41, 185) 19.9%, rgb(80, 177, 225) 95%);
     }
 
     #listabotoes{
@@ -113,16 +115,24 @@
         flex-direction: row;
         align-items: center;
         justify-content: end;
-        gap: .5vw;
+        gap: .7vw;
     }
+    
     #listabotoes > li > a{
-        background-color: white;
-        color: rgb(159, 7, 169);
+        background-color: rgb(117, 11, 188);
+        color: white;
         font-size: 3vw;
         border-top: none;
-        border: 1px solid rgb(159, 7, 169);
+        border: 1px solid white;
         border-radius: 5px 5px;
         padding: 5px;
+        transition: .1s ease-in-out;
+    }
+    #listabotoes > li > a:hover{
+        transform: scale(1.03);
+        background-color: white;
+        color: rgb(87, 0, 145);
+        border: 1px solid rgb(93, 2, 154);
     }
     #fundosobre{
         margin: auto;
@@ -166,14 +176,14 @@
     .headercard{
         width: 5vw;
         height: 5vw;
-        top: -7px;
-        right: -7px;
+        top: -35px;
+        right: -35px;
     }
     .cardtitle{
-        font-size: 4vw;
+        font-size: 5vw;
     }
     .cardtext{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     #tituloprojetos{
         display: flex;
@@ -326,11 +336,22 @@
     .card{
         height: 25vw;
     }
+    .card_link:hover .headercard{
+        -webkit-transform: scale(3100);
+        -ms-transform: scale(3100);
+        transform: scale(300);
+    }
+    .card_link:hover .cardtext{
+        color: white;
+    }
+    .card_link:hover .cardtitle{
+        color: white;
+    }
     .cardtitle{
-        font-size: 3.5vw;
+        font-size: 4vw;
     }
     .cardtext{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     .card{
         width: 35vw;
@@ -426,10 +447,11 @@
         font-size: 1.5vw;
     }
     .cardtitle{
-        font-size: 2.2vw;
+        font-size: 2.8vw;
     }
     .cardtext{
-        font-size: 1.8vw;
+        font-size: 2.2vw;
+        padding: 5px;
     }
     #imagemsobre{
         width: 100%;
@@ -453,4 +475,5 @@
         width: 11vw;
         font-size: 1.3vw;
     }
+
 }
