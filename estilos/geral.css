@@ -35,6 +35,12 @@ body{
     "footer footer";
 }
 
+main{
+    grid-area: main;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
 /*keyframes*/
 
 @keyframes anime{
@@ -153,13 +159,6 @@ td, th, .front, .back{
 
 
 /*principal*/
-
-main{
-    grid-area: main;
-    width: 100vw;
-    background-color: whitesmoke;
-}
-
 /*banner*/
 
 #fundo{
