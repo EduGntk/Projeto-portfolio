@@ -101,6 +101,9 @@ a{
     background: white;
     border-radius: 3px;
     padding: 8px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /*fontes*/
@@ -251,7 +254,7 @@ main{
     width: 80vw;
     padding: 10px;
     display: grid;
-    grid-template-rows: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
     align-content: center;
     justify-items: center;
     gap: 10px;
@@ -260,7 +263,7 @@ main{
 }
 .card{
     width: 70vw;
-    height: 40vw;
+    height: 42vw;
     padding: 5px;
     background: rgb(87,0,158);
     border-radius: 15px;
@@ -302,7 +305,7 @@ main{
     background-color: whitesmoke;
 }
 .cardtop{
-    padding: 10px;
+    padding: 5px;
     display: flex;
     flex-direction: row;
     gap: 10px;

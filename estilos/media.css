@@ -14,6 +14,9 @@
         height: 60vw;
         gap: 5vw;
     }
+    .cardtop{
+        padding: 10px;
+    }
     .fonteEntrada{
         font-size: 5.1vw;
     }
@@ -37,7 +40,7 @@
     }
     .card{
         width: 50vw;
-        height: 30vw;
+        height: 32vw;
     }
     .cardprojeto{
         width: 60vw;
@@ -106,7 +109,9 @@
     #links > a:hover{
         color: white;
         transform: scale(1.04);
-        background: linear-gradient(111.7deg, rgb(165, 41, 185) 19.9%, rgb(80, 177, 225) 95%);
+        background: linear-gradient(90deg, rgba(142,33,191,1) 0%, rgba(74,25,152,1) 50%, rgba(142,33,191,1) 100%);
+        animation: anime 1.5s linear infinite;
+        background-size: 200% 200%;
     }
 
     #listabotoes{
@@ -147,6 +152,11 @@
         margin-bottom: 15vh;
         border-radius: 10px 5px;
     }
+    #fundotitulo{
+        background: linear-gradient(90deg, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 50%, rgb(64, 84, 178) 100%);
+        animation: anime 1.5s linear infinite;
+        background-size: 200% 200%;
+    }
     #sobremim{
         width: 100%;
         gap: 5vw;
@@ -166,12 +176,15 @@
         width: 85%;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         gap: 10px 0px;
     }
     .card{
         width: 40vw;
         height: 25vw;
+        background: linear-gradient(90deg, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 50%, rgb(64, 84, 178) 100%);
+        animation: anime 1.5s linear infinite;
+        background-size: 200% 200%;
     }
     .headercard{
         width: 5vw;
