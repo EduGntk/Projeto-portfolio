@@ -45,7 +45,7 @@ body{
 
 /*inicio*/
 header{
-    width: 100vw;
+    width: 100%;
     grid-area: header;
     background-color: white;
 }
@@ -159,7 +159,7 @@ td, th, .front, .back{
 
 main{
     grid-area: main;
-    width: 100vw;
+    width: 100%;
     background-color: whitesmoke;
 }
 
@@ -351,6 +351,7 @@ main{
 /*projetos*/
 
 #projetoslink{
+    color: #4f3b78;
     text-align: center;
     margin-bottom: 1vw;
 }
@@ -386,7 +387,7 @@ main{
 /*footer*/
 
 footer{
-    width: 100vw;
+    width: 98.7vw;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -394,6 +395,7 @@ footer{
     justify-content: left;
     gap: 15px;
 }
+
 
 footer > h1{
     align-self: center;

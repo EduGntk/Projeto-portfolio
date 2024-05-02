@@ -78,6 +78,16 @@
             background-position-x:-200% ;
         }
     }
+
+
+    .reveal_topo, .reveal_topo1, .reveal_topo2, .reveal_topo3, .reveal_topo4, .reveal_sobre, .reveal_card1, .reveal_card2, .reveal_card3, .reveal_img_sobre{
+        visibility: hidden;
+    }
+
+    .reveal_sobre2{
+        opacity: 1;
+    }
+    
     #linkheader{
         display: flex;
         flex-direction: row;
@@ -316,6 +326,7 @@
         display: block;
         align-self: center;
         justify-self: center;
+        animation: movimento 3s infinite ease;
     }
     
     #sobremim{
@@ -446,6 +457,9 @@
         width: 100%;
         height: 15vw;
     }
+    #projetoslink{
+        font-size: 3vw;
+    }
     #projetos{
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(2, 1fr);
@@ -488,5 +502,7 @@
         width: 11vw;
         font-size: 1.3vw;
     }
-
+    #imgpro{
+        padding: 0;
+    }
 }
