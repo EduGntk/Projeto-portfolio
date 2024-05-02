@@ -260,6 +260,17 @@
             filter: hue-rotate(360deg);
         }
     }
+    @keyframes movimento{
+        0%{
+            transform: translateY(-30px);
+        }
+        50%{
+            transform: translateY(0px);
+        }
+        100%{
+            transform: translateY(-30px);
+        }
+    }
     #logo{
         width: 8vw;
     }
