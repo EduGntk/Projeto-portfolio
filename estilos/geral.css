@@ -163,6 +163,10 @@ main{
     background-color: whitesmoke;
 }
 
+.reveal_topo, .reveal_topo1, .reveal_topo2, .reveal_topo3, .reveal_topo4, .reveal_sobre, .reveal_card1, .reveal_card2, .reveal_card3, .reveal_img_sobre{
+    visibility: hidden;
+}
+
 /*banner*/
 
 #fundo{

@@ -2,26 +2,29 @@ window.revelar = ScrollReveal({reset:true})
 
 revelar.reveal('.reveal_topo',{
     duration: 2000,
-    distance: '90px',
+    distance: '120px',
     delay: 200,
+
 })
 
 revelar.reveal('.reveal_topo1',{
     duration: 2000,
-    distance: '90px',
-    delay: 400,
+    distance: '120px',
+    delay: 200,
+
 })
 
 revelar.reveal('.reveal_topo2',{
     duration: 2000,
-    distance: '90px',
-    delay: 600,
+    distance: '120px',
+    delay: 200,
+
 })
 
 revelar.reveal('.reveal_topo3',{
     duration: 2000,
     distance: '90px',
-    delay: 800,
+    delay: 600,
 })
 
 revelar.reveal('.reveal_topo4',{

@@ -79,11 +79,6 @@
         }
     }
 
-
-    .reveal_topo, .reveal_topo1, .reveal_topo2, .reveal_topo3, .reveal_topo4, .reveal_sobre, .reveal_card1, .reveal_card2, .reveal_card3, .reveal_img_sobre{
-        visibility: hidden;
-    }
-
     .reveal_sobre2{
         opacity: 1;
     }
@@ -118,10 +113,10 @@
     }
     #links > a:hover{
         color: white;
-        transform: scale(1.04);
-        background: linear-gradient(90deg, rgba(142,33,191,1) 0%, rgba(74,25,152,1) 50%, rgba(142,33,191,1) 100%);
+        background: linear-gradient(90deg, rgb(64, 84, 178) 0%, rgb(219, 2, 234) 50%, rgb(64, 84, 178) 100%);
         animation: anime 1.5s linear infinite;
         background-size: 200% 200%;
+        transform: scale(1.04);
     }
 
     #listabotoes{
@@ -371,10 +366,11 @@
     .card{
         height: 25vw;
     }
+    .card_link{
+        transition: .1s;
+    }
     .card_link:hover .headercard{
-        -webkit-transform: scale(3100);
-        -ms-transform: scale(3100);
-        transform: scale(300);
+        transform: scale(20);
     }
     .card_link:hover .cardtext{
         color: white;
@@ -384,9 +380,11 @@
     }
     .cardtitle{
         font-size: 4vw;
+        transition: .5s;
     }
     .cardtext{
         font-size: 3vw;
+        transition: .8s;
     }
     .card{
         width: 35vw;
